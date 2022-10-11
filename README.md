@@ -29,7 +29,7 @@ The second part of model creation involved compiling, training, and evaluating t
 
 ![This is an image](https://github.com/EricaEidelman/Neural_Network_Charity_Analysis/blob/main/Resources/Model_Optim1_Results.png)
 
-The next optimization attempt added a third hidden layer with 25 neurons. Accuracy was slightly higher than the original model but lower than the first optimization attempt (72.52%) but loss decreased compared to the previous two iterations (0.5611). Model summary and results ae below.
+The next optimization attempt added a third hidden layer with 25 neurons. Accuracy was slightly higher than the original model but lower than the first optimization attempt (72.52%) and loss increased compared to the previous two iterations (0.5611). Model summary and results are below.
 
 ![This is an image](https://github.com/EricaEidelman/Neural_Network_Charity_Analysis/blob/main/Resources/Model_Optim2_Summary.png)
 
@@ -42,3 +42,6 @@ The third optimization attempt kept the same parameters as the second, but chang
 ![This is an image](https://github.com/EricaEidelman/Neural_Network_Charity_Analysis/blob/main/Resources/Model_Optim3_Results.png)
 
 ## Summary
+The highest accuracy, although not by a lot, was from the first optimization attempt which had two hidden layers of 100 and 50 neurons with a ReLu activation function in each layer, as well as an output layer utilizing the sigmoid function. Loss was lowest in the original model with 80 and 30 neurons. The lowest accuracy and highest loss both were in the third optimization attempt, which had three hidden layers of 100, 50, and 25 neurons, and ReLu functions in the hidden layers and the output layer. One can conclude that two hidden layers are likely the optimal amount for this data set.
+
+Another model which can be used for this data set is the random forest. Random forests combine the output of smaller decision trees in order to make a final cateogrical decision. This dataset contains no images or natural language, so a random forest would be able to handle the classification. The model would be dependent on training on subsets of the dataset in order to predict whether applicants would be successful in using funds. Given that the neural network didn't see much improvement after increasing the number of hidden layers and neurons, the much faster random forest would be a good alternative to try.
